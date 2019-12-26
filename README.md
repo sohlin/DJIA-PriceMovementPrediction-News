@@ -20,4 +20,8 @@ Modeling : Using the vectors as features and the price movement labels as the re
 Prediction
 ***
 ## Results (part)
+DJIA Price Plot & train-test-split
+
+![image](https://github.com/sohlin/DJIA-PriceMovementPrediction-News/blob/master/image/pic2.PNG)
+
 Backtest on investment strategy
