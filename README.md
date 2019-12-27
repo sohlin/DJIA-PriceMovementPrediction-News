@@ -1,5 +1,5 @@
 # DJIA-PriceMovementPrediction-News
-Course project for Data-driven Modeling and Analysis
+Forcast price movement by LSTM, SVM, and Random Forest using news data
 
 The project use news data to predict DJIA short-term price movement. Use CountVectorizer (sklearn) to transform news to vectors, and this method is One-hot Representation. At the same time, use Word2vec to complete the transformation and compare the results.  Typically, BOW, though simple, performs well in such task. 
 
