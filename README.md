@@ -27,3 +27,14 @@ Prediction
 *Backtest on investment strategy*
 
 ![image](https://github.com/sohlin/DJIA-PriceMovementPrediction-News/blob/master/image/pic1.PNG)
+
+The net value curve is shown above. In real world, we have to consider handling fee, so I set as below:
+
+Buy commision = 0.48%, Sell commision = 0.5%. 
+
+The back-test details are shown below:
+
+tradeNumber_long|winRatio_long|cumReturn|annualReturn|excessCumReturn_Open|excessAnnualReturn_Open|maxdown|calmarRatio|sharpeRatio
+---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---:
+67|52.24%|30.44%|18.85%|29.86%|18.47%|-8.97%|2.10|1.39
+
