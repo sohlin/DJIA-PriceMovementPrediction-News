@@ -20,11 +20,25 @@ Modeling : Using the vectors as features and the price movement labels as the re
 Prediction
 ***
 ## Results (part)
-*DJIA Price Plot & train-test-split*
+### DJIA Price Plot & train-test-split
+
+For training and testing, I split the data set into two part. News before 01/02/2015 are set to be training set, while others are test set. It is approximately 8:2 for trainSet:testSet.
+
+At the mean while, The number of rises and falls of DJIA for training is about half to half, so there is no serious sample imbalance problem here.
 
 ![image](https://github.com/sohlin/DJIA-PriceMovementPrediction-News/blob/master/image/pic2.PNG)
 
-*Backtest on investment strategy*
+### Accuracy of test (SVM)
+
+SVM(rbf)|precision|recall|f1-score|support
+---|:--:|:--:|:--:|---:
+up|1|0.7|0.83|186
+down|0.78|1|0.87|191
+accuracy|   |		|0.85|377
+macro avg|0.89|0.85|0.85|377
+weighted avg|0.89|0.85|0.85|377
+
+### Backtest on investment strategy
 
 ![image](https://github.com/sohlin/DJIA-PriceMovementPrediction-News/blob/master/image/pic1.PNG)
 
@@ -32,7 +46,7 @@ The net value curve is shown above. In real world, we have to consider handling 
 
 Buy commision = 0.48%, Sell commision = 0.5%. 
 
-The back-test details are shown below:
+The back-test details are shown below (SVM):
 
 tradeNumber_long|winRatio_long|cumReturn|annualReturn|excessCumReturn_Open|excessAnnualReturn_Open|maxdown|calmarRatio|sharpeRatio
 ---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---:
