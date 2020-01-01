@@ -3,6 +3,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
@@ -59,8 +60,9 @@ if __name__ == '__main__':
 
     # Perform word to vector
     simpleVectorizer = CountVectorizer(stop_words='english',ngram_range=(1, 1))
-    x_train = simpleVectorizer.fit_transform(trainNews)
-    x_test = simpleVectorizer.transform(testNews)
+    transformer = TfidfTransformer()
+    x_train = transformer.fit_transform(simpleVectorizer.fit_transform(trainNews))
+    x_test = transformer.transform(simpleVectorizer.transform(testNews))
 
     # Logistic Regression
     logreg = LogisticRegression(C=0.1)
