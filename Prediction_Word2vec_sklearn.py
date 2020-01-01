@@ -9,8 +9,6 @@ from sklearn.svm import SVC
 from sklearn.cluster import KMeans
 from sklearn.metrics import classification_report, f1_score, accuracy_score, confusion_matrix
 
-import pdb
-
 
 def news_to_words(news, removeStopwords = False):
     '''
