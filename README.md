@@ -3,7 +3,7 @@
 
 The project use news data to predict DJIA short-term price movement. Use CountVectorizer (sklearn) to transform news to vectors, and this method is One-hot Representation. At the same time, use Word2vec to complete the transformation and compare the results.  Typically, BOW, though simple, performs well in such task. 
 
-Then conduct the prediction through models like LSTM, SVM, and Random Forest and evaluate the results.
+Then conduct the prediction through models like LSTM, SVM, and Random Forest and evaluate the results. Typically, I use news of today to predict the next day's DJIA movement.
 ***
 ## Data resource:
 Kaggle.com
